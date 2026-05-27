@@ -1,6 +1,7 @@
 (ns calculador-trastes.routes.app
   (:require [cheshire.core :as json]
-            [reitit.ring :as ring]))
+            [reitit.ring :as ring]
+            [calculador-trastes.handlers.handler :as handler]))
 (defn calculadorTrastes-handler
   [request]
   (let [body (slurp (:body request))
@@ -10,7 +11,7 @@
      :headers {"Content-Type" "application/json"}
      :body (json/generate-string
             {:escala escala
-             :msg "Cálculo realizado com sucesso!"})}
+             :resultado (handler/calcularDados escala)})}
     ))
 (defn health-handler
   [request]

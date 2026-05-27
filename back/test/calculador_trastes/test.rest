@@ -2,5 +2,5 @@ POST http://localhost:3001/calculador
 Content-Type: application/json
 
 {
-    "escala": "650"
+    "escala": 700
 }
