@@ -1,2 +1,4 @@
 .clj-kondo/.cache/
 .lsp/.cache/
+front/node_modules/
+front/dist/

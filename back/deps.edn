@@ -4,7 +4,6 @@
         metosin/reitit {:mvn/version "0.7.2"}
         ring/ring-core {:mvn/version "1.13.0"}
         ring/ring-jetty-adapter {:mvn/version "1.13.0"}
-        ring/ring-json {:mvn/version "0.5.1"}
         cheshire/cheshire {:mvn/version "5.13.0"}}
 
  :aliases
